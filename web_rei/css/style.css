@@ -723,6 +723,37 @@
 			padding: 1em 0em;
 		}
 
+#banner2 {
+		padding: 6em 0em 3em 0em;
+		text-align: center;
+		text-transform: uppercase;
+		color: grey;
+	}
+
+		#banner2 .container {
+			padding: 0em 8em;
+		}
+
+		#banner2 h2 {
+			display: inline-block;
+			padding: 0.50em 0.30em;
+			background: #00bffF;
+			font-size: 3em;
+			font-weight: 400;
+		}
+
+		#banner2 span, #banner2 p {
+			display: block;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			font-size: 1.6em;
+			font-weight: 300;
+		}
+
+		#banner2 span {
+			padding: 1em 0em;
+		}
+
 /* Main */
 
 	#main {
