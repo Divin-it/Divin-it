@@ -16,6 +16,11 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script type="text/javascript">
+			function Scrolldown () {
+  			document.all.contactview.scrollIntoView(true);
+			}
+		</script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -85,14 +90,14 @@
 					<div class="row double">
 						<div class="6u">
 							<header class="major">
-								<h2>Persönlich, nah und immer für Sie da!</h2>
+								<h2>Kompetenz aus Erfahrung</h2>
 								<span>Aus vielen Gesprächen mit unseren Patientinnen wissen wir, dass ausreichend Zeit für eine gute und vertrauensvolle Beziehung zwischen Ärztinn und Patientin essentiell ist. Wir legen Wert auf eine ausführliche und persönliche Beratung und Behandlung.</span>
 							</header>
 						</div>
 						<div class="6u">
 							<h3>Wir freuen uns auf Sie!</h3>
 							<p>Sie wünschen einen Termin oder haben weitere Fragen? </p>
-							<a href="kontakt.html" class="button">Kontakt aufnehmen</a>
+							<a href="javascript:Scrolldown()" class="button">Kontakt aufnehmen</a>
 						</div>
 					</div>
 				</section>
@@ -200,7 +205,7 @@
 						<div class="4u">
 							<ul class="special-icons">
 								<li>
-									<span class="icon icon-phone"></span>
+									<span class="icon icon-phone" id="contactview"></span>
 									<h3>So kontaktieren Sie uns</h3>
 									<p><a href="tel:+4982334004" style="text-decoration: none;">Tel: +498233 4004</a></p>
 									<p>Fax: 08233 31985</p>
@@ -235,8 +240,8 @@
 								<li>
 									<span class="icon icon-external-link"></span>
 									<h3>Quicklinks</h3>
+									<p><a href="http://josefinum.de" target="_blank">Josefinum</a></p>
 									<p><a href="http://www.drk.de/angebote/erste-hilfe-und-rettung/erste-hilfe-online.html" target="_blank">Erste Hilfe</a></p>
-									<p><a href="http://www.klinikum-augsburg.de" target="_blank">Josefinum</a></p>
 									<p><a href="http://www.frauenaerzte-im-netz.de" target="_blank">Frauenärzte im Netz</a></p>
 								</li>
 							</ul>

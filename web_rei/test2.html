@@ -1,0 +1,14 @@
+<html><head><title>Test</title>
+<script type="text/javascript">
+function Test () {
+  document.all.Absatz.scrollIntoView(true);
+}
+</script>
+</head><body>
+<p id="Absatz">Ein Text</p>
+<script type="text/javascript">
+for (i = 1; i < 100; i++)
+  document.write("<br>Zeile " + i);
+</script>
+<p><a href="javascript:Test()">Test</a></p>
+</body></html>
