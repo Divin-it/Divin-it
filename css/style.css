@@ -423,7 +423,7 @@
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			background-color: #32b777;
+			background-color: #4c77bc;
 		}
 
 		input[type="submit"].fit,
@@ -503,6 +503,7 @@
 	#logo {
 		font-size: 2em;
 	}
+	
 
 	#nav > ul {
 		margin: 0;
@@ -530,7 +531,7 @@
 			}
 
 			#nav > ul > li.active {
-				background: #3ac984;
+				background: #2056ac;
 			}
 
 				#nav > ul > li.active a {
@@ -545,7 +546,7 @@
 
 	.dropotron {
 		margin-top: -2px;
-		background: #3ac984;
+		background: #4c77bc;
 		border-radius: 10px;
 		color: white;
 		min-width: 12em;
