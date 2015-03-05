@@ -814,7 +814,7 @@
 			text-decoration: none;
 			font-weight: 300;
 			line-height: 1em;
-			font-size: 4em;
+			font-size: 3.5em;
 			color: #FFF;
 			letter-spacing: -0.05em;
 			margin: 0 0 0.125em 0;
@@ -970,7 +970,7 @@
 	#featured h3
 	{
 		display: block;
-		font-weight: 300;
+		font-weight: 290;
 	}
 
 	#featured .pennant
@@ -982,7 +982,10 @@
 	{
 		margin-top: 1.5em;
 	}
-
+	#featured .top1
+	{
+		font-weight: 300%
+	}
 /*********************************************************************************/
 /* Tweet                                                                         */
 /*********************************************************************************/
