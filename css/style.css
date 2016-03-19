@@ -627,7 +627,9 @@
 		#main .sidebar > :first-child {
 			margin-bottom: 3em;
 		}
-
+	.ueberschrift {
+			font-size: 1.4em;
+	}
 /* Footer */
 
 	#footer {
