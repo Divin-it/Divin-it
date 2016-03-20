@@ -960,7 +960,9 @@
    
     vertical-align: top;
 	}
-
+	.highlight {
+		font-size: 1.6em;
+	}
   body {text-align:center;}
 
 /*********************************************************************************/
