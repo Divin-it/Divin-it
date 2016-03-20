@@ -26,9 +26,14 @@
 					<ul>
 						<li><a href="index.html">Homepage</a></li>
 						<li><a href="firma.html">Firma</a></li>
-						<li><a href="land.html">Land</a></li>
-						<li><a href="luft.html">Luft</a></li>
-						<li><a href="wasser.html">Wasser</a></li>
+						<li>
+							<a href="leistungen.html">Leistungen</a>
+							<ul>
+								<li><a href="land.html">Land</a></li>
+								<li><a href="luft.html">Luft</a></li>
+								<li><a href="wasser.html">Wasser</a></li>
+							</ul>
+						</li>
 						<li class="active"><a href="kontakt.html">Kontakt</a></li>
 						<li><a href="impressum.html">Impressum</a></li>
 					</ul>
@@ -51,11 +56,93 @@
 			<div id="content" class="container">
 				<section>
 					<header>
-						<h2 style="text-align: center">Kontaktformular</h2>
+						<h2 style="text-align: center">Kontakt</h2>
 						<span class="byline"></span>
 					</header>
-					<p>*Kontaktformular*</p>
-					<p>Mapsplugin</p>							
+					<p>Vermessungs- und Ingenieurbüro Schlimper GmbH
+						<p>Riedweg 21</p>
+						<p>86199 Augsburg</p>
+						<p>Tel.: +49 821 9073620</p>
+						<p>E-Mail: info@vib-schlimper.com</p>			
+
+				</section>
+			</div>
+		</div>
+		<!-- Kontakformular -->
+		<div id="main" style="text-align: center">
+					<div id="content" class="container">
+						<section>
+
+						<header>
+								<h2 style="text-align: center">Kontakt-Formular</h2>
+								<span class="byline">Hier können Sie uns eine Mitteilung zukommen lassen:</span>
+							</header>
+						<div>
+							<form method="post" action="versand.php">
+
+						     <table class="center">
+						     <tr><td class="firsttd">Ihr Name:</td>
+						     <td><input name="Name" type="text" size="54"></td></tr>
+						     <tr><td class="firsttd">Ihre Mailadresse:</td>
+						     <td><input name="E-mail Adresse" type="text" size="54"></td></tr>
+						     <tr><td>Ihre Telefon-nr.:</td>
+						     <td><input name="Telefon Nummer" type"number" size="54"></td></tr>
+						     <tr><td></td><td></td></tr>
+						     <tr><td class="textentry">Ihre Nachricht:</td>
+						     <td><textarea name="Nachricht" rows="6" cols="54"></textarea></td></tr>
+						     </table>
+						     <br>
+						     <input type="submit" value="Versenden">
+
+						</div>		
+
+				</section>
+			</div>
+		</div>
+		<!-- Maps Anfahrt Plugin -->
+		<div id="main" style="text-align: center">
+			<div id="content" class="container">
+				<section>
+					<header>
+						<h2 style="text-align: center">So finden Sie zu uns</h2>
+						<span class="byline"></span>
+					</header>
+
+					<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+					<div style='overflow:hidden;height:400px;width:500px;margin-left:auto; margin-right:auto;'><div id='gmap_canvas' style='height:400px;width:500px;'></div>
+					<style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+					<script type='text/javascript'>function init_map(){
+						var myOptions = {zoom:11,center:new google.maps.LatLng(48.32824,10.839860000000044),mapTypeId: google.maps.MapTypeId.ROADMAP};
+						map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+						marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(48.32824,10.839860000000044)});
+						infowindow = new google.maps.InfoWindow({content:'<strong>Hier finden Sie uns</strong><br>Riedweg 21 86199 Augsburg<br>'});
+						google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
+						infowindow.open(map,marker);}
+						google.maps.event.addDomListener(window, 'load', init_map);
+
+						$(window).on('resize', function() {
+    
+    					var currCenter = map.getCenter();
+    					google.maps.event.trigger(map, 'resize');
+    					map.setCenter(currCenter);
+						});
+
+						</script>
+				<!--
+					<div id="map">
+					</div>
+					<script type="text/javascript">
+						function initMap() {
+					        var mapDiv = document.getElementById('map');
+					        var map = new google.maps.Map(mapDiv, {
+					          center: {lat: 44.540, lng: -78.546},
+					          zoom: 8
+					        });
+					      }
+					</script>
+
+					<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        			async defer></script>-->
 
 				</section>
 			</div>

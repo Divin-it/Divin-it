@@ -1,8 +1,4 @@
-/*
-	Linear by TEMPLATED
-    templated.co @templatedco
-    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
+/* Schlimper Vermessung Basic CSS */
 
 @charset 'UTF-8';
 
@@ -109,7 +105,9 @@
 		header h2
 		{
 		}
-
+		header h3 {
+			font-size: 1.2em;
+		}
 		header .byline
 		{
 			display: block;
@@ -885,6 +883,37 @@
 			{
 				display: none;
 			}
+
+/* Dropotron */
+
+	.dropotron {
+		margin-top: 0px;
+		background: #7396CA;
+		border-radius: 10px;
+		color: white;
+		min-width: 10.5em;
+		padding: 1em 0;
+	}
+
+		.dropotron > li {
+			line-height: 2em;
+			padding: 0 1em;
+			text-transform: uppercase;
+		}
+
+			.dropotron > li > a {
+				color: #FFF;
+				text-decoration: none;
+			}
+
+			.dropotron > li.active > a, .dropotron > li:hover > a {
+				color: #FFF;
+			}
+
+		.dropotron.level-0 {
+			border-radius: 0 10px 10px 10px;
+			font-size: 1em;
+		}
 	
 /*********************************************************************************/
 /* Main                                                                          */
@@ -910,6 +939,29 @@
 		display: block;
 		padding-bottom: 0.50em;
 	}
+	.highlight {
+		font-size: 1.7em;
+	}
+
+	table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  	}
+
+  	td {
+  		text-align: left;
+  	}
+
+  	td.firsttd {
+  		width: 23%;
+  	}
+
+  	td.textentry {
+   
+    vertical-align: top;
+	}
+
+  body {text-align:center;}
 
 /*********************************************************************************/
 /* Footer                                                                        */
@@ -1025,3 +1077,18 @@
 			font-weight: 300;
 			color: rgba(255,255,255,.6);
 		}	
+
+
+/*********************************************************************************/
+/* Maps Plugin                                                                    */
+/*********************************************************************************/
+
+#map {
+	align-content: center;
+	align-self: center;
+	align-items: center;
+	text-align: center;
+    width: 500px;
+    height: 400px;
+    background-color: #CCC;
+  }
