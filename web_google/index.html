@@ -13,6 +13,15 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+		<script type="text/javascript">
+			function Scrolldown () {
+  			document.all.contactview.scrollIntoView(true);
+			}
+
+			function Scrolldown2 () {
+  			document.all.contactview2.scrollIntoView(true);
+			}
+		</script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -27,10 +36,7 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="left-sidebar.html">Left Sidebar</a></li>
-						<li><a href="right-sidebar.html">Right Sidebar</a></li>
-						<li><a href="no-sidebar.html">No Sidebar</a></li>
-						<li><a href="#" class="button special">Sign Up</a></li>
+						<li><a href="javascript:Scrolldown()" class="button special">Contact</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -39,10 +45,10 @@
 			<section id="banner">
 				<div class="inner">
 					<h2>Daniel Lenhart</h2>
-					<p>Applying for <a href="https://www.google.com/about/careers/search#!t=jo&jid=184565001&">this job @Google</a></p>
+					<p><a href="https://www.google.com/about/careers/search#!t=jo&jid=184565001&">Applying for this job @Google</a></p>
 					<ul class="actions">
-						<li><a href="#content" class="button big special">Contact me now</a></li>
-						<li><a href="#elements" class="button big alt">About me</a></li>
+						<li><a href="javascript:Scrolldown()" class="button big special">Contact me now</a></li>
+						<!--<li><a href="#elements" class="button big alt">About me</a></li>-->
 					</ul>
 				</div>
 			</section>
@@ -149,39 +155,17 @@
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="container">
-					<div class="row double">
-						<div class="6u">
-							<div class="row collapse-at-2">
-								<div class="6u">
-									<h3>Accumsan</h3>
-									<ul class="alt">
-										<li><a href="#">Nascetur nunc varius</a></li>
-										<li><a href="#">Vis faucibus sed tempor</a></li>
-										<li><a href="#">Massa amet lobortis vel</a></li>
-										<li><a href="#">Nascetur nunc varius</a></li>
-									</ul>
-								</div>
-								<div class="6u">
-									<h3>Faucibus</h3>
-									<ul class="alt">
-										<li><a href="#">Nascetur nunc varius</a></li>
-										<li><a href="#">Vis faucibus sed tempor</a></li>
-										<li><a href="#">Massa amet lobortis vel</a></li>
-										<li><a href="#">Nascetur nunc varius</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<div class="6u">
-							<h2>Aliquam Interdum</h2>
+					<div class="row">
+						<div class="contact"id="contactview">
+							<h2>Contact Details</h2>
 							<p>Blandit nunc tempor lobortis nunc non. Mi accumsan. Justo aliquet massa adipiscing cubilia eu accumsan id. Arcu accumsan faucibus vis ultricies adipiscing ornare ut. Mi accumsan justo aliquet.</p>
-							<ul class="icons">
+							<!--<ul class="icons">
 								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 								<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
 								<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
 								<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
-							</ul>
+							</ul>-->
 						</div>
 					</div>
 					<ul class="copyright">
