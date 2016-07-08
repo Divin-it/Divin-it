@@ -615,6 +615,11 @@
 
 /* Table */
 
+	.firsttd {
+		vertical-align: middle;
+		text-align: center;
+	}
+
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;

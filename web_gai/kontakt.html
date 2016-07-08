@@ -36,19 +36,72 @@
 			<section id="main" class="wrapper style1">
 				<header class="major">
 					<h2>Kontakt</h2>
-					<p>So kontaktieren Sie uns</p>
+					<p>Wir freuen uns auf Sie</p>
 				</header>
 				<div class="container">
 					<section class="midtext">
 						<h2>Gai-Reisen e.K. </h2>
 
 						<p>Gai-Reisen e.K.<br />
-						Karolina Gai<br />Eichenstr. 29a<br />86477 Adelsried</p>
+						Karolina Gai<br />Flurstraße 6<br />86477 Adelsried</p>
 						<p><a href="tel:+4982941227">Tel: +498294/1227</a><br/>
 						E-mail: <a href="mailto:info@gai-reisen.de">info@gai-reisen.de</a></p>
 
-						<p>Kontakt Formular</p>
-						<p>Maps Plugin</p>
+						<!-- Kontakformular -->
+				<div id="main" style="text-align: center">
+					<div id="content" class="container">
+						<section>
+
+						<header>
+								<h2 style="text-align: center">Kontakt-Formular</h2>
+								<span class="byline">Hier können Sie uns eine Mitteilung zukommen lassen:</span>
+							</header>
+						<div>
+							<form method="post" action="versand.php">
+
+						     <table class="center">
+						     <tr><td class="firsttd">Ihr Name:</td>
+						     <td><input name="Name" type="text"></td></tr>
+						     <tr><td class="firsttd">Ihre Mailadresse:</td>
+						     <td><input name="E-mail Adresse" type="text"></td></tr>
+						     <tr><td class="firsttd">Ihre Telefon-nr.:</td>
+						     <td><input name="Telefon Nummer" type="text"></td></tr>
+						     
+						     <tr><td class="firsttd">Ihre Nachricht:</td>
+						     <td><textarea name="Nachricht" rows="6" cols="54"></textarea></td></tr>
+						     </table>
+						     <input type="submit" value="Versenden">
+
+						</div>		
+
+						</section>
+					</div>
+				</div>
+
+						<!-- Maps Anfahrt Plugin -->
+						<h2>Wir befinden uns hier</h2>
+						<div>
+							<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+					<div style='overflow:hidden;height:400px;width:500px;margin-left:auto; margin-right:auto;'><div id='gmap_canvas' style='height:400px;width:500px;'></div>
+					<style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+					<script type='text/javascript'>function init_map(){
+						var myOptions = {zoom:11,center:new google.maps.LatLng(48.425974, 10.725611),mapTypeId: google.maps.MapTypeId.ROADMAP};
+						map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+						marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(48.425974, 10.725611)});
+						infowindow = new google.maps.InfoWindow({content:'<strong>Hier finden Sie uns</strong><br>Flurstraße 6,  86477 Adelsried<br>'});
+						google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
+						infowindow.open(map,marker);}
+						google.maps.event.addDomListener(window, 'load', init_map);
+
+						$(window).on('resize', function() {
+    
+    					var currCenter = map.getCenter();
+    					google.maps.event.trigger(map, 'resize');
+    					map.setCenter(currCenter);
+						});
+						</script>
+
+						</div>
 						
 
 					</section>
@@ -67,10 +120,10 @@
 						<div class="6u">
 							<div class="row collapse-at-2">
 								<div class="6u">
-									<h3>So finden Sie uns</h3>
+									<h3>So kontaktieren Sie uns</h3>
 									<ul class="alt">
 										<li>Gai-Reisen e.K.</li>
-										<li>Straße</li>
+										<li>Flurstraße 6</li>
 										<li>86477 Adelsried</li>
 										<li><a href="tel:+4982941227">Tel: +498294/1227</a></li>
 										<li>E-mail: <a href="mailto:info@gai-reisen.de">info@gai-reisen.de</a></li>
